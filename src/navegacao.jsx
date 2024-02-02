@@ -1,12 +1,30 @@
-export function Navegacao(props) {
-    return <div className="navegacao">
-        <input type="radio" name="opcao-pagina" id="pagina0" defaultChecked onClick={() => props.atualizarPaginaSelecionada(0)}/>
-        <label htmlFor="pagina0">Pratos principais</label>
-        <input type="radio" name="opcao-pagina" id="pagina1" onClick={() => props.atualizarPaginaSelecionada(1)}/>
-        <label htmlFor="pagina1">Sobremesas</label>
-        <input type="radio" name="opcao-pagina" id="pagina2" onClick={() => props.atualizarPaginaSelecionada(2)}/>
-        <label htmlFor="pagina2">Bebidas</label>
+function Navegacao(props) {
+  return (
+    <div className="navegacao">
+      <input
+        name="paginas-cardapio"
+        type="radio"
+        id="opcao-0"
+        defaultChecked
+        onClick={() => props.alterarPaginaSelecionada(0)}
+      />
+      <label htmlFor="opcao-0">Pratos Principais</label>
+      <input
+        name="paginas-cardapio"
+        type="radio"
+        id="opcao-1"
+        onClick={() => props.alterarPaginaSelecionada(1)}
+      />
+      <label htmlFor="opcao-1">Sobremesas</label>
+      <input
+        name="paginas-cardapio"
+        type="radio"
+        id="opcao-2"
+        onClick={() => props.alterarPaginaSelecionada(2)}
+      />
+      <label htmlFor="opcao-2">Bebidas</label>
     </div>
+  );
 }
 
-
+export default Navegacao;
