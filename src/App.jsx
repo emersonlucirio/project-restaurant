@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import hashtauranteImg from './assets/hashtaurante.webp';
 import Navegacao from './navegacao';
-import ItemCardapio from './ItemCardapio';
+import ItemCardapio from './itemCardapio.jsx';
 import { pratosPrincipais, sobremesas, bebidas } from './cardapio';
 
 function App() {
